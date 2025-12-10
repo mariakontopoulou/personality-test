@@ -1,0 +1,399 @@
+/*Default texts*/
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  font-family: 'Open Sans', sans-serif;
+  color: #1a1d38;
+  line-height: 1.6;  width: 80%;
+  margin: 0 auto 5% auto;
+}
+
+h1, h2, h3, .logo, .cta-button {
+  font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+  font-size: 3.7rem;
+  font-weight: bold;
+  margin: 0 0 10px 0;
+}
+
+h1 .green {
+  color: #008558;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 1.7rem;
+  margin-top: 20px;
+  width: 75%;
+}
+
+p{
+  font-size: 1.2rem;
+  color: #1a1d38b7;
+}
+
+/*Navbar*/
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0; 
+  background-color: #ffffff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  backdrop-filter: blur(10px);
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #008558;
+  cursor: pointer;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #1a1d38;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #008558;
+}
+
+.nav-cta {
+  background-color: #008558;
+  color: white !important;
+  padding: 10px 20px;
+  border-radius: 20px;
+  transition: background-color 0.3s ease !important;
+}
+
+.nav-cta:hover {
+  background-color: #006c46;
+}
+
+/*Section 1*/
+
+.container {
+  background-color: #ffebd6;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  border-radius: 20px;
+}
+
+.text-section {
+  width: 50%;
+  padding: 30px 0 40px 60px;
+}
+
+.text-section-full {
+  width: 100%;
+  padding: 60px 0 60px 60px;
+}
+
+.image-section {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.image-section img {
+  max-width: 45%;
+}
+
+/*Button*/
+
+.cta-button {
+  display: inline-block;
+  margin-top: 20px;
+  background-color: #008558;
+  color: white;
+  font-size: 1.8rem;
+  text-decoration: none;
+  padding: 15px 35px;
+  border-radius: 30px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cta-button:hover {
+  background-color: #006c46;
+  transform: scale(1.05);
+}
+
+/*Section 2*/
+
+.sub-containers {
+  display: flex;
+  justify-content: space-between;
+  margin: 10% 0 10% 0;
+  gap: 3%;
+  flex-wrap: wrap;
+}
+
+.sub-container {
+  flex: 1 1 45%;
+  text-align: center;
+}
+
+.sub-container h1 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-align: left;
+}
+
+.sub-container h2 {
+  font-size: 1.2rem;
+  text-align: left;
+}
+
+.sub-container h3 {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+/*Section 3*/
+
+.how-it-works {
+  background-color: #f5f6fa;
+  padding: 20px 60px;
+  border-radius: 20px;
+}
+
+.how-boxes {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.step-box {
+  flex: 1 1 30%;
+  padding: 40px 10px;
+}
+
+.step-number {
+  font-size: 3.7rem;
+}
+
+.title-large {
+  font-size: 3.7rem;
+}
+
+.step-box h3 {
+  font-size: 1.8rem;
+}
+
+.step-box p {
+  font-size: 1.2rem;
+  color: #1a1d389f;
+}
+
+/*Section 4*/
+
+.project-description {
+  color: #1a1d38b7;
+}
+
+.sub-container-full.row {
+  display: flex;
+  margin: 5% 0 5% 0;
+}
+
+.sub-container-full.row .image-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+
+.sub-container-full.row .text-section {
+  text-align: left;
+  padding-right: 10px;
+}
+
+.title-medium {
+  font-size: 1.95rem;
+}
+
+.bio {
+  font-size: 1.2rem;
+}
+
+/*Section 5*/
+
+.quiz-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4%;
+  padding-right: 60px;
+}
+
+.quiz-card {
+  border: none;
+  background: none;
+  font-family: inherit;
+  padding: 0;
+  text-align: center;
+  flex: 1 1 20%;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  padding: 20px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.quiz-card img {
+  width: 100%;
+  border-radius: 15px;
+  margin-top: 10px;
+}
+
+.quiz-card:hover {
+  transform: translateY(-5px) scale(1.05);
+  background-color: #f1dcc5;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.quiz-card-title {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+  line-height: 2;
+}
+
+.title-small {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+.quiz-card-desc {
+  font-size: 1.2rem;
+  margin: 0;
+  text-align: center;
+  width: 100%;
+  font-weight: 400;
+}
+
+#quiz-overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1);
+  transition: opacity 0.3s ease-out, transform 0.3s ease-out, visibility 0.3s;
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+}
+
+#quiz-overlay.is-visible {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+}
+
+#quiz-frame {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+#close-quiz {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  padding: 10px 20px;
+  font-size: 18px;
+  background: #008558;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/*For smoother scrolling*/
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 120px;
+}
+
+.body-no-scroll {
+  overflow: hidden;
+}
+
+/*Responsive design*/
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    min-height: auto;
+  }
+
+  .text-section,
+  .text-section-full {
+    width: 100%;
+    padding: 30px;
+    text-align: center;
+  }
+
+  .image-section {
+    width: 100%;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .image-section img {
+    width: 100%;
+    max-width: 45%;
+  }
+
+  .how-boxes {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .step-box {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .sub-container {
+    flex: 1 1 100%;
+  }
+
+  .sub-container-full.row {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .sub-container-full.row .image-section {
+    margin-bottom: 20px;
+  }
+
+  .quiz-card {
+    flex: 1 1 100%;
+    padding: 25px 15px;
+  }
+}

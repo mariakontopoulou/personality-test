@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personality Test</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">Personality Test</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#how_it_works">How it works</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#quiz_section" class="nav-cta">Take a Test</a></li>
+      </ul>
+    </nav>
+    <!--Section 1-->
+
+    <section id="home" class="container">
+      <div class="text-section">
+        <h1>Discover <span class="green">who you truly are</span> with the Personality test</h1>
+        <h2>With this test, you will find out your exact personality type</h2>
+        <a href="#quiz_section" class="cta-button">Take a test</a>
+      </div>
+      <div class="image-section">
+        <img src="images/phone.png" alt="phone_png">
+      </div>
+    </section>
+
+    <!--Section 2-->
+
+    <section class="sub-containers">
+      <div class="sub-container">
+        <h3>Discover Your True Self!</h3>
+        <p>Answer a few fun questions and get your personality type instantly - no overthinking required!</p>
+      </div>
+      <div class="sub-container">
+        <h3>Fast, Fun, and Totally You</h3>
+        <p>Quick quizzes that reveal one defining trait about you in each area of life.</p>
+      </div>
+    </section>
+
+    <!--Section 3-->
+
+    <section id="how_it_works" class="how-it-works">
+      <h2 class="title-large">How it works</h2>
+      <div class="how-boxes">
+        <div class="step-box">
+          <span class="step-number">1</span>
+          <h3>Prepare yourself</h3>
+          <p>Ensure you're in a relaxed setting conducive to concentration for the test</p>
+        </div>
+        <div class="step-box">
+          <span class="step-number">2</span>
+          <h3>Complete the test</h3>
+          <p>Respond to 5 simple questions designed to reveal aspects of your personality</p>
+        </div>
+        <div class="step-box">
+          <span class="step-number">3</span>
+          <h3>Receive your insights</h3>
+          <p>Access your report to explore the various personality types and find out where you belong!</p>
+        </div>
+      </div>
+    </section>
+
+    <!--Section 4-->
+
+    <section id="about" class="sub-container-full row">
+      <div class="image-section">
+        <img src="images/girl.png" alt="girl_png">
+      </div>
+      <div class="text-section">
+        <h2 class="title-medium">Crafted by Maria Kontopoulou</h2>
+        <p class="bio"> The Personality Test project was developed as part of the Coding course at Audencia Business School.<br>
+          The main objective of this project is to integrate Typeform quizzes into a custom website built with HTML and CSS.<br>
+          The website features four personality tests, each containing five questions, designed using Typeform’s “Outcome Quiz” method to generate personalized results.
+        </p>
+      </div>
+    </section>
+
+    <!--Section 5-->
+
+    <section id="quiz_section" class="container">
+      <div class="text-section-full">
+        <h3 class="title-small">Choose your test</h3>
+        <div class="how-boxes quiz-buttons">
+          <!--Quiz 1-->
+          <button class="quiz-card" id="quiz-food" type="button">
+            <img src="images/food.png" alt="food_png">
+            <h3 class="quiz-card-title">Food Quiz</h3>
+            <p class="quiz-card-desc">Which foodie are you?</p>
+          </button>
+          <!--Quiz 2-->          
+          <button class="quiz-card" id="quiz-superpower" type="button">
+            <img src="images/superpwer.png" alt="superpower_png">
+            <h3 class="quiz-card-title">Superpower Quiz</h3>
+            <p class="quiz-card-desc">Uncover your hidden superpower!</p>
+          </button>
+          <!--Quiz 3-->
+          <button class="quiz-card" id="quiz-travel" type="button">
+            <img src="images/travel.png" alt="travel_png">
+            <h3 class="quiz-card-title">Travel Quiz</h3>
+            <p class="quiz-card-desc">What kind of traveler are you?</p>
+          </button>
+          <!--Quiz 4-->         
+          <button class="quiz-card" id="quiz-career" type="button">
+            <img src="images/career.png" alt="career_png">
+            <h3 class="quiz-card-title">Career Quiz</h3>
+            <p class="quiz-card-desc">Find out your career alter ego!</p>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <div id="quiz-overlay">
+      <iframe id="quiz-frame" src=""></iframe>
+      <button id="close-quiz" type="button">✖ Close</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
