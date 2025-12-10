@@ -275,7 +275,7 @@ p{
 }
 
 .quiz-card-title {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   margin-bottom: 10px;
   line-height: 2;
 }
@@ -396,4 +396,5 @@ html {
     flex: 1 1 100%;
     padding: 25px 15px;
   }
+
 }
